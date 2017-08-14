@@ -207,14 +207,10 @@ public class CameraActivity extends AppCompatActivity {
                 Toast.makeText(this, "Foto belum tersedia", Toast.LENGTH_SHORT).show();
                 return false;
             } else {
-                // ambil alamat
-                Uri imageUri = Uri.parse(mCurrentPhotoPath);
-                Log.d("imageUri : ", imageUri.toString());
-
                 Intent inten = new Intent(Intent.ACTION_SEND);
                 inten.setType("image/*");
                 // berikan fotodari uri ke inten
-                inten.putExtra(Intent.EXTRA_STREAM, imageUri);
+                inten.putExtra(Intent.EXTRA_STREAM, fileUri);
                 // tampilkan aplikasi sosmed
                 startActivity(Intent.createChooser(inten, "Share Foto"));
                 return true;
