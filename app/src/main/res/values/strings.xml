@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Aplikasi Advance</string>
+    <string-array name="menu_home">
+        <item>Bluethooth</item>
+        <item>Wifi</item>
+        <item>Audio Manager</item>
+        <item>Send SMS</item>
+        <item>Send Email</item>
+        <item>Text to Speech</item>
+        <item>Speech to Text</item>
+        <item>Record Audio</item>
+        <item>Camera</item>
+    </string-array>
+    <string name="title_activity_camera">CameraActivity</string>
+</resources>

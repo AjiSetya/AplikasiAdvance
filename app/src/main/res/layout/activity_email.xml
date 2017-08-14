@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.blogsetyaaji.aplikasiadvance.EmailActivity">
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/input_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/txtcoba"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:hint="Coba Edit Text Dari Android" />
+    </android.support.design.widget.TextInputLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Email"
+        android:layout_below="@id/input_layout"
+        app:met_baseColor="#000"
+        app:met_primaryColor="#000"
+        app:met_errorColor="#f22a37"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtemail"
+        app:met_singleLineEllipsis="true"
+        android:inputType="textEmailAddress" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Subject"
+        app:met_baseColor="#000"
+        app:met_primaryColor="#000"
+        app:met_errorColor="#f22a37"
+        app:met_floatingLabel="highlight"
+        android:layout_marginTop="5dp"
+        android:id="@+id/txtsubject"
+        android:layout_below="@id/txtemail"
+        app:met_singleLineEllipsis="true"
+        android:inputType="textEmailAddress" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Imput Email"
+        app:met_baseColor="#000"
+        app:met_primaryColor="#000"
+        app:met_errorColor="#f22a37"
+        app:met_floatingLabel="normal"
+        android:lines="30"
+        android:gravity="top|left"
+        android:layout_marginTop="5dp"
+        android:layout_below="@id/txtsubject"
+        android:id="@+id/txtemaisi" />
+
+    <Button
+        android:text="Send"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:id="@+id/btnemsend" />
+</RelativeLayout>

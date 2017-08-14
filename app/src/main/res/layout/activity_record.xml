@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.blogspot.blogsetyaaji.aplikasiadvance.RecordActivity">
+
+    <Button
+        android:text="play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/btnrecord"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btnplay" />
+
+    <Button
+        android:text="stop record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/btnplay"
+        android:layout_alignParentRight="true"
+        android:id="@+id/btnstop" />
+
+    <Button
+        android:text="record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="228dp"
+        android:id="@+id/btnrecord"
+        android:layout_alignParentTop="true"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="stop play"
+        android:id="@+id/stplay"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/btnstop"/>
+</RelativeLayout>
